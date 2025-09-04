@@ -1,0 +1,34 @@
+Atividade 1 – ISO/IEC 9126
+Caso 9 – Sistema de Votação Online
+Durante uma eleição interna, o sistema apresentou vulnerabilidades e votos duplicados.
+
+------------------------------------------------------------------------------------------------------------------------
+
+1. CARACTERÍSTICAS ISO/IEC 9126 ENVOLVIDAS
+
+* Funcionalidade – Adequação e Acurácia: o sistema precisa garantir que cada voto seja único e corretamente registrado.
+* Confiabilidade – Tolerância a falhas: o software deve evitar inconsistências mesmo em situações de alto tráfego.
+* Segurança (relacionada à Funcionalidade): deve assegurar que os dados dos eleitores e votos não sejam manipulados ou duplicados.
+* Usabilidade: a interface deve ser clara para evitar erros humanos que possam gerar duplicidade de votos.
+
+------------------------------------------------------------------------------------------------------------------------
+
+2. MÉTRICAS ESCOLHIDAS PARA AVALIAÇÃO
+
+3. Taxa de votos válidos (%)
+   Fórmula: (Número de votos válidos ÷ Número total de votos registrados) × 100
+   Objetivo: medir a proporção de votos que foram aceitos sem duplicidade ou falhas.
+
+4. Taxa de falhas de segurança (incidentes por eleição)
+   Fórmula: Número de incidentes de vulnerabilidade ÷ Total de eleições realizadas
+   Objetivo: avaliar a frequência de problemas de segurança, como invasões ou manipulação de votos.
+
+------------------------------------------------------------------------------------------------------------------------
+
+3. PROPOSTAS DE MELHORIAS
+
+* Implementação de autenticação forte (ex.: autenticação em dois fatores para o eleitor).
+* Controle de unicidade do voto com verificações em banco de dados (cada eleitor só pode votar uma vez).
+* Auditoria e trilhas de logs para rastrear qualquer tentativa de fraude ou manipulação.
+* Testes de segurança (penetration testing) antes de cada eleição.
+* Interface mais clara para confirmar ao usuário que seu voto foi registrado corretamente.
